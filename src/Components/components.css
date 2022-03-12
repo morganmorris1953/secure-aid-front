@@ -1,0 +1,20 @@
+#callback-spinner{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-chat{
+    background-color: rgba(20, 20, 161, .3);
+}
+.other-chat{
+    background-color: rgba(219, 36, 0, 0.3);
+}
+.list-group-item{
+    margin: 5px !important;
+    border-radius: 18px !important;
+    background-color: inherit !important;
+}
+

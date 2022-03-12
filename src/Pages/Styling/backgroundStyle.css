@@ -1,0 +1,184 @@
+/* TODO:  */
+/* integrate the login card */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.moving{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.moving .moving-bg{
+  box-sizing:  content-box;
+  /* padding-bottom: 300px; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background-color: rgba(1000, 1000, 1000, .7); */
+  background-image: url('../images/refugee_camp.avif');
+  filter: brightness(2) contrast(40%);
+  background-clip: content-box;
+  background-size: cover;
+  animation: moving 30s linear infinite ;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card{
+  background-color: rgba(1000, 1000, 1000, .75) !important;
+}
+/* .cards { */
+/* display: flex; */
+/* flex-direction: column; */
+/* position: fixed; */
+/* width: 100%;  */
+/* height: 1000px;  */
+/* align-items: center; */
+/* justify-content: center; */
+/* box-flex: 1; */
+/* } */
+#top {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+z-index: 11;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+#login-box {
+display: flex;
+border: 4px #007a36 solid;
+width: 900px;
+/* background-position: center; */
+/* background-size: cover; */
+border-style: groove;
+border-color: #007a36;
+border-width: 4px;
+background-color: #dcdfe3;
+align-items: flex-start;
+justify-content: center;
+z-index: 14;
+}
+
+
+.carousel {
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  /* border: 8px #007a36 solid; */
+  /* resize-mode: contain; */
+  width: 60%;
+  /* height: 400px; */
+  padding: 10px;
+}
+
+#bottom_carousel {
+  display: flex;
+  /* position: absolute; */
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-content: center;
+  align-items: center;
+  width: 900px;
+  padding-left: 85px;
+  padding-top: 200px;
+}
+
+#facts-carousel {
+display: flex;
+padding-top: 20px;
+height: 600px;
+}
+
+.picture-text {
+position: relative;
+text-align: center;
+/* color: #d32011; */
+color: red;
+text-shadow: 2px 2px 4px black, -2px -2px 4px white;
+font-size: xx-large;
+}
+
+.center {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -80%);
+width: 750px;
+}
+
+.center-bottom {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, 130%);
+width: 750px;
+}
+
+.center-bottom2 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, 20%);
+width: 750px;
+}
+
+.center-bottom2 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, 10%);
+width: 750px;
+}
+
+.right {
+ position: absolute;
+  top: 8px;
+  right: 16px;
+  width: 300px;
+}
+
+.aid{
+display: flex;
+/* padding-top: 200px; */
+padding-bottom: 500px;
+max-height: 50px;
+/* height: 50px; */
+}
+
+
+
+
+.aid-pictures {
+height: 5%;
+}
+
+#navbar {
+  position: relative;
+  color: #007a36;
+  font-family: sans-serif;
+}
+
+@keyframes moving {
+  from{
+    transform: translateY(100) translateX(-100) scale(1, 1) 
+  }
+  to {
+    transform: translateY(225px) translateX(-300px) scale(1.5, 1.5)
+  }
+} 
